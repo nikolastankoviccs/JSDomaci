@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style src="index.css">
+      #container {
+        background-color: rgb(121, 156, 219);
+        height: max-content;
+        width: max-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <button id="clickMe" onclick="Welcome()">Click Me!</button>
+
+      <br />
+
+      <p id="demo">Hi.</p>
+
+      <br />
+
+      <button id="changeText" onclick="TxtChange()">Change text</button>
+      <hr />
+      <img
+        id="milton"
+        src="https://www.thrashermagazine.com/images/image/Features/2019/MiltonArticle/CV1TH1219_750px_2x.jpg"
+        alt="MiltonMartinez"
+        style="height: 500px; width: 300px"
+        onmouseover="hover(this);"
+        onmouseout="msoff(this)"
+      />
+      <hr />
+      <br />
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <br />
+      <input type="radio" id="male" name="gender" value="Female" />
+      <label for="female">Female</label>
+      <br />
+
+      <input
+        type="button"
+        id="checkGender"
+        value="Check Gender"
+        onclick="checkRadio()"
+      />
+      <br />
+      <span id="span1"></span>
+      <hr />
+      <br />
+      <br />
+      <label for="FirstName">First name:</label>
+      <input type="text" id="firstName" placeholder="Your first name" />
+      <br />
+      <label for="lastName">Last name:</label>
+      <input type="text" id="lastName" placeholder="Your last name" />
+      <br />
+      <label for="favouriteAnimal">Favourite animal:</label>
+      <input
+        type="text"
+        id="favouriteAnimal"
+        placeholder="Your favourite animal"
+      />
+      <br />
+      <a href="second.html"><button id="Submit">Submit</button></a>
+      <br />
+      <button id="ShowInput" onclick="ShowInput()">Show Input</button>
+      <br />
+
+      <span id="spanFirst"></span>
+      <br />
+
+      <span id="spanLast"></span>
+      <br />
+      <span id="spanAnimal"></span>
+    </div>
+  </body>
+</html>
